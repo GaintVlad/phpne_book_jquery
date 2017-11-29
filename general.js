@@ -14,7 +14,7 @@ $(function() {
     }
 
     if (typeof(Storage) !== "undefined") {
-        if (localStorage.getItem("persons") === null) { //todo
+        if (localStorage.getItem("persons") === null) {
             localStorage.setItem('persons', JSON.stringify(persons));
         } else {
             persons = JSON.parse(localStorage.getItem("persons"));
